@@ -1,0 +1,128 @@
+MongoServerSelectionError: connection <monitor> to 18.197.64.153:27017 closed
+    at Timeout._onTimeout (C:\WebProjects\Anomaly\DealBreaker\node_modules\mongodb\lib\sdam\topology.js:325:38)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-02.rzqlk.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'cluster0-shard-00-02.rzqlk.mongodb.net',
+          port: 27017
+        },
+        address: 'cluster0-shard-00-02.rzqlk.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 887705410,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connection <monitor> to 18.197.64.153:27017 closed
+            at Connection.handleIssue (C:\WebProjects\Anomaly\DealBreaker\node_modules\mongodb\lib\cmap\connection.js:119:23)
+            at TLSSocket.<anonymous> (C:\WebProjects\Anomaly\DealBreaker\node_modules\mongodb\lib\cmap\connection.js:60:39)
+            at TLSSocket.emit (events.js:315:20)
+            at net.js:673:12
+            at TCP.done (_tls_wrap.js:563:7)
+      },
+      'cluster0-shard-00-01.rzqlk.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'cluster0-shard-00-01.rzqlk.mongodb.net',
+          port: 27017
+        },
+        address: 'cluster0-shard-00-01.rzqlk.mongodb.net:27017',
+        type: 'RSSecondary',
+        hosts: [
+          'cluster0-shard-00-00.rzqlk.mongodb.net:27017',
+          'cluster0-shard-00-01.rzqlk.mongodb.net:27017',
+          'cluster0-shard-00-02.rzqlk.mongodb.net:27017'
+        ],
+        passives: [],
+        arbiters: [],
+        tags: {
+          nodeType: 'ELECTABLE',
+          provider: 'AWS',
+          region: 'EU_CENTRAL_1',
+          workloadType: 'OPERATIONAL'
+        },
+        minWireVersion: 0,
+        maxWireVersion: 9,
+        roundTripTime: 210.64000000000001,
+        lastUpdateTime: 887705744,
+        lastWriteDate: 2021-09-28T06:01:20.000Z,
+        topologyVersion: {
+          processId: ObjectId { [Symbol(id)]: [Buffer [Uint8Array]] },
+          counter: 4
+        },
+        primary: 'cluster0-shard-00-01.rzqlk.mongodb.net:27017',
+        me: 'cluster0-shard-00-01.rzqlk.mongodb.net:27017',
+        setName: 'atlas-tmwdbk-shard-0',
+        setVersion: 6,
+        electionId: ObjectId {
+          [Symbol(id)]: Buffer(12) [Uint8Array] [
+            127, 255, 255, 255, 0,
+              0,   0,   0,   0, 0,
+              0, 163
+          ]
+        },
+        logicalSessionTimeoutMinutes: 30,
+        '$clusterTime': {
+          clusterTime: Timestamp { low: 3, high: 1632808880, unsigned: true },
+          signature: { hash: [Binary], keyId: [Long] }
+        }
+      },
+      'cluster0-shard-00-00.rzqlk.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'cluster0-shard-00-00.rzqlk.mongodb.net',
+          port: 27017
+        },
+        address: 'cluster0-shard-00-00.rzqlk.mongodb.net:27017',
+        type: 'RSSecondary',
+        hosts: [
+          'cluster0-shard-00-00.rzqlk.mongodb.net:27017',
+          'cluster0-shard-00-01.rzqlk.mongodb.net:27017',
+          'cluster0-shard-00-02.rzqlk.mongodb.net:27017'
+        ],
+        passives: [],
+        arbiters: [],
+        tags: {
+          workloadType: 'OPERATIONAL',
+          region: 'EU_CENTRAL_1',
+          nodeType: 'ELECTABLE',
+          provider: 'AWS'
+        },
+        minWireVersion: 0,
+        maxWireVersion: 9,
+        roundTripTime: 215.8,
+        lastUpdateTime: 887705765,
+        lastWriteDate: 2021-09-28T06:01:20.000Z,
+        topologyVersion: {
+          processId: ObjectId { [Symbol(id)]: [Buffer [Uint8Array]] },
+          counter: 3
+        },
+        primary: 'cluster0-shard-00-01.rzqlk.mongodb.net:27017',
+        me: 'cluster0-shard-00-00.rzqlk.mongodb.net:27017',
+        setName: 'atlas-tmwdbk-shard-0',
+        setVersion: 6,
+        logicalSessionTimeoutMinutes: 30,
+        '$clusterTime': {
+          clusterTime: Timestamp { low: 3, high: 1632808880, unsigned: true },
+          signature: { hash: [Binary], keyId: [Long] }
+        }
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-tmwdbk-shard-0',
+    commonWireVersion: 9,
+    logicalSessionTimeoutMinutes: 30
+  }
+}

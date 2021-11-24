@@ -1,0 +1,29 @@
+{
+  "name": "anomaly",
+  "version": "1.0.0",
+  "description": "Deal Breaker built By Amir Burdini meant to find gaps on 2 order books",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amir Burdini",
+  "license": "ISC",
+  "dependencies": {
+    "audio-loader": "^1.0.3",
+    "audio-play": "^2.3.1",
+    "axios": "^0.21.1",
+    "binance": "^1.3.8",
+    "binance-api-node": "^0.11.3",
+    "bit2c": "0.0.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "exceljs": "^4.2.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mongodb": "^4.1.0",
+    "mongoose": "^5.13.3",
+    "node-binance-api": "^0.12.5",
+    "nodemon": "^2.0.7",
+    "twilio": "^3.68.0"
+  }
+}

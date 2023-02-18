@@ -5,7 +5,7 @@ const twilio = require('twilio')(process.env.ACCOUNT_SID, process.env.AUTH_TOKEN
  
 // mongo api
 let MongoClient = require('mongodb').MongoClient
-let url = "mongodb+srv://AnomalyAdmin:z8mOVXSZupRWkrqy@cluster0.rzqlk.mongodb.net/Anomaly-DB?retryWrites=true&w=majority"
+let url = "mongodb+srv://AnomalyAdmin:tUVgXl32UWdxDRGM@cluster0.rzqlk.mongodb.net/Anomaly-DB?retryWrites=true&w=majority"
 
 // api info
 const bit2c = require('bit2c')
